@@ -1,1 +1,0 @@
-# lhi-related-table-sync
