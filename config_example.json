@@ -1,0 +1,20 @@
+{
+  "portal_url": "https://spatialsolutions.maps.arcgis.com",
+  "username": "",
+  "main_layer_url": "https://services.arcgis.com/ORG_ID/arcgis/rest/services/Your_Main_Layer/FeatureServer/0",
+  "source_table_url": "https://services.arcgis.com/ORG_ID/arcgis/rest/services/Your_Main_Layer/FeatureServer/1",
+  "main_key_field": "TREE_ID",
+  "source_key_field": "TREE_ID",
+  "source_value_field": "PLANTED_DATE",
+  "target_value_field": "PLANTED_DATE_TI",
+  "selection_rule": "latest",
+  "main_where": "PLANTED_DATE_TI IS NULL AND TREE_ID IS NOT NULL",
+  "source_where": "PLANTED_DATE IS NOT NULL AND TREE_ID IS NOT NULL",
+  "output_folder": "C:\\GIS\\LHI_RelatedTableSync\\output",
+  "audit_csv_name": "lhi_related_table_sync_audit.csv",
+  "final_audit_csv_name": "lhi_related_table_sync_audit_final.csv",
+  "dry_run": true,
+  "batch_size": 200,
+  "query_chunk_size": 1000,
+  "action_label": "FIELD_SYNC"
+}
